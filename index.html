@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Automation Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-card {
+            background: #f8f9ff;
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .skill-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skill-card li {
+            padding: 0.25rem 0;
+            color: #555;
+        }
+
+        .skill-card li:before {
+            content: "▹ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .project {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+        }
+
+        .project h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+        }
+
+        .project-tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+        }
+
+        .project-details {
+            margin-top: 1rem;
+        }
+
+        .project-details h4 {
+            color: #667eea;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .impact {
+            background: #f0f7ff;
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .contact-btn {
+            background: #667eea;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+            display: inline-block;
+        }
+
+        .contact-btn:hover {
+            background: #764ba2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            background: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Odukoya Anjolaoluwa Dorothy</h1>
+        <p>DevOps Engineer | Cloud & Infrastructure Specialist | Automation Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a First Class Computer Science graduate (CGPA 4.71) specializing in DevOps, cloud infrastructure, and automation. Currently working as a DevOps & IT Support Intern at Fibre One Broadband, where I manage Linux servers, Proxmox virtual environments, Docker containers, and automation workflows with n8n.</p>
+            <p style="margin-top: 1rem;">My experience spans across cloud engineering (Azure), server administration, containerization, and building automation workflows that streamline business operations. I'm passionate about infrastructure-as-code, automation, and creating efficient, scalable systems. I previously interned with MTN Nigeria's Cloud & Data Science teams, where I gained exposure to Azure FinOps, cost optimization, and enterprise infrastructure management.</p>
+            <p style="margin-top: 1rem;">I hold Microsoft Azure certifications (AZ-900, AI-900) and have completed training in CompTIA A+, Oracle Database, and cloud computing fundamentals.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Cloud & Virtualization</h3>
+                    <ul>
+                        <li>Microsoft Azure (AZ-900)</li>
+                        <li>Azure FinOps & Cost Optimization</li>
+                        <li>Proxmox VE</li>
+                        <li>VM deployment & management</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>DevOps & Containers</h3>
+                    <ul>
+                        <li>Docker & containerization</li>
+                        <li>Linux server administration</li>
+                        <li>Nginx web server</li>
+                        <li>Infrastructure monitoring</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Automation & Workflows</h3>
+                    <ul>
+                        <li>n8n workflow automation</li>
+                        <li>API integrations</li>
+                        <li>Webhooks & triggers</li>
+                        <li>Process automation</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Security & Networking</h3>
+                    <ul>
+                        <li>Firewall configuration (UFW, iptables)</li>
+                        <li>Network security</li>
+                        <li>Email configuration</li>
+                        <li>VPN setup</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Databases & Tools</h3>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>Oracle Database 12c</li>
+                        <li>Git & GitHub</li>
+                        <li>Jira project management</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript (n8n scripting)</li>
+                        <li>Bash scripting</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects & Key Accomplishments</h2>
+            
+            <div class="project">
+                <h3>Automated Network Monitoring & Customer Alert System</h3>
+                <div>
+                    <span class="project-tag">n8n</span>
+                    <span class="project-tag">Docker</span>
+                    <span class="project-tag">PostgreSQL</span>
+                    <span class="project-tag">Smart OLT Integration</span>
+                    <span class="project-tag">Email Automation</span>
+                </div>
+                
+                <div class="project-details">
+                    <h4>Challenge</h4>
+                    <p>Customer network outages (Loss of Signal - LOS) were not being communicated proactively, leading to increased support calls and customer dissatisfaction. The technical team needed real-time visibility into which customers were affected to prioritize troubleshooting efforts.</p>
+                    
+                    <h4>Solution</h4>
+                    <p>Built an automated monitoring system that continuously checks customer ONU (Optical Network Unit) status from Smart OLT data and proactively notifies both customers and internal teams when network issues are detected.</p>
+                    
+                    <h4>Technical Implementation</h4>
+                    <ul style="margin-left: 1.5rem;">
+                        <li>Deployed using Docker on Ubuntu server with scheduled execution every 7 hours</li>
+                        <li>Connected to PostgreSQL database with two tables: network information and customer data</li>
+                        <li>Integrated with Smart OLT system to retrieve real-time ONU status data</li>
+                        <li>Implemented conditional logic to detect LOS (Loss of Signal) status changes</li>
+                        <li>Automated customer email notifications acknowledging the issue and ticket creation</li>
+                        <li>Generated consolidated reports for internal technical team with affected customer lists</li>
+                        <li>Key n8n nodes: Schedule Trigger, PostgreSQL, HTTP Request, IF conditions, Email Send, Data Aggregation</li>
+                    </ul>
+                    
+                    <div class="impact">
+                        <h4 style="margin-top: 0;">Impact</h4>
+                        <p>Reduced customer support calls by proactively notifying affected users before they report issues. Improved technical team response time by providing consolidated affected customer lists every 7 hours. Enhanced customer satisfaction through transparent communication during network outages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Secure API-Based Data Warehouse Integration System</h3>
+                <div>
+                    <span class="project-tag">n8n</span>
+                    <span class="project-tag">Multi-Workflow Architecture</span>
+                    <span class="project-tag">API Authentication</span>
+                    <span class="project-tag">PostgreSQL</span>
+                    <span class="project-tag">Webhooks</span>
+                </div>
+                
+                <div class="project-details">
+                    <h4>Challenge</h4>
+                    <p>The organization needed a secure, controlled method for external users to input payment data into the data warehouse, with proper authentication, authorization workflows, and admin oversight to prevent unauthorized access.</p>
+                    
+                    <h4>Solution</h4>
+                    <p>Designed and implemented a comprehensive three-workflow system that handles user registration, admin approval, and secure API-based data ingestion with proper authentication and authorization checks.</p>
+                    
+                    <h4>Technical Implementation</h4>
+                    <ul style="margin-left: 1.5rem;">
+                        <li><strong>Workflow 1 - User Registration:</strong> Webhook endpoint accepts user registration (name + email), generates unique User ID and API key, stores in PostgreSQL with initial "inactive" status</li>
+                        <li><strong>Workflow 2 - Admin Approval:</strong> Automatically sends email notification to admin with Accept/Reject buttons; webhook-triggered approval process updates user status to "authorized" in database upon admin acceptance</li>
+                        <li><strong>Workflow 3 - Data Ingestion API:</strong> Validates API key and authorization status against database before allowing payment data insertion; implements security checks to prevent unauthorized access</li>
+                        <li>Technologies used: n8n webhooks, PostgreSQL database operations, Email nodes with interactive buttons, HTTP Request authentication</li>
+                        <li>Security features: API key generation, status-based authorization, admin approval gate, database validation</li>
+                    </ul>
+                    
+                    <div class="impact">
+                        <h4 style="margin-top: 0;">Impact</h4>
+                        <p>Created a secure, scalable system for external data integration with proper access controls. Eliminated manual data entry while maintaining admin oversight. Provided audit trail through database status tracking and reduced unauthorized access risks through multi-layered authentication.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Linux Server Infrastructure Management</h3>
+                <div>
+                    <span class="project-tag">Proxmox</span>
+                    <span class="project-tag">Ubuntu Server</span>
+                    <span class="project-tag">Docker</span>
+                    <span class="project-tag">Nginx</span>
+                </div>
+                
+                <div class="project-details">
+                    <h4>Overview</h4>
+                    <p>Managed and monitored Linux (Ubuntu) servers using Proxmox virtualization platform at Fibre One Broadband, ensuring high availability and system reliability.</p>
+                    
+                    <h4>Key Responsibilities</h4>
+                    <ul style="margin-left: 1.5rem;">
+                        <li>Deployed and configured virtual machines using Proxmox VE</li>
+                        <li>Configured Docker containers for internal applications and services</li>
+                        <li>Set up and maintained Nginx web servers and PostgreSQL databases</li>
+                        <li>Configured firewall rules using UFW and iptables for enhanced security</li>
+                        <li>Monitored system performance and ensured high uptime</li>
+                    </ul>
+                    
+                    <div class="impact">
+                        <h4 style="margin-top: 0;">Impact</h4>
+                        <p>Maintained 99%+ server uptime, secured network infrastructure, and streamlined VM deployment processes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Azure Cloud Cost Optimization (MTN Nigeria)</h3>
+                <div>
+                    <span class="project-tag">Azure</span>
+                    <span class="project-tag">FinOps</span>
+                    <span class="project-tag">Cloud Cost Management</span>
+                    <span class="project-tag">Jira</span>
+                </div>
+                
+                <div class="project-details">
+                    <h4>Overview</h4>
+                    <p>Collaborated with MTN Nigeria's Cloud team on Azure FinOps initiatives, focusing on cloud cost optimization and resource management.</p>
+                    
+                    <h4>Key Contributions</h4>
+                    <ul style="margin-left: 1.5rem;">
+                        <li>Analyzed Azure subscription costs and identified optimization opportunities</li>
+                        <li>Used Jira to track AIA completion status and manage sprint tasks</li>
+                        <li>Monitored cloud resources and infrastructure performance</li>
+                        <li>Participated in Data Centre tours, learning about server operations and disaster recovery</li>
+                        <li>Earned Microsoft Azure certifications (AZ-900 & AI-900)</li>
+                    </ul>
+                    
+                    <div class="impact">
+                        <h4 style="margin-top: 0;">Learning Outcomes</h4>
+                        <p>Gained hands-on experience with enterprise-scale cloud infrastructure, cost management strategies, and Azure services in a production environment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p style="text-align: center; margin-bottom: 1.5rem;">I'm interested in DevOps Engineer, Cloud Infrastructure, and Automation roles. Let's connect!</p>
+            <div class="contact-links">
+                <a href="mailto:odukoya504@gmail.com" class="contact-btn">Email Me</a>
+                <a href="https://github.com/Anjolaoluwa-Odukoya" class="contact-btn" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/anjolaoluwa-odukoya-4b453528b" class="contact-btn" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Odukoya Anjolaoluwa Dorothy. First Class Computer Science Graduate | DevOps & Cloud Enthusiast</p>
+    </footer>
+</body>
+</html>
