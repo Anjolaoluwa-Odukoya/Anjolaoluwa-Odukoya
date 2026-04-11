@@ -2,7 +2,7 @@
 
 > *"Automating the boring stuff so humans can focus on the interesting problems."*
 
-I'm a **DevOps & Automation Engineer** based in Nigeria 🇳🇬, currently building things at **Fibre One Broadband**.
+I'm a **DevOps & Automation Engineer** based in Nigeria 🇳🇬, currently building things at **Bluebulb Financials**.
 I have a thing for workflows that run themselves, systems that talk to each other, and infrastructure that doesn't keep you up at night.
 
 First Class Computer Science graduate who went straight from lecture halls into production servers and never looked back.
